@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(255,255,255,0.8) !important;
+  background-color: rgba(255,255,255,0.7) !important;
   background-image: url(https://theunpaidgamers.files.wordpress.com/2012/03/reckoning_dlc1_gallows1.jpg);
   background-blend-mode: color;
   font-family: 'Metal Mania';
@@ -7,4 +7,8 @@ body {
 
 #hidden-letters {
 	padding-top: 100px;
+}
+
+.jumbotron {
+	background-color: rgba(0,0,0,0);
 }

@@ -35,6 +35,8 @@ function startGame () {
 	document.getElementById("hidden-letters").innerHTML = blanksAndSuccesses.join(" ");
 	document.getElementById("guesses-left").innerHTML = guessesLeft;
 	document.getElementById("win-count").innerHTML = winCount;
+	document.getElementById("incorrect-letters").innerHTML = wrongLetters;
+	document.getElementById("gallows").src = "assets/images/hangman0.png"
 
 	console.log(selectedWord);
 	console.log(lettersInWord);
