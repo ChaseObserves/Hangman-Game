@@ -48,8 +48,6 @@ function checkLetters(letter) {
 	// Check if letter exists at all
 	var isLetterInWord = false;
 	var gallowsArray = ["assets/images/hangman0.png", "assets/images/hangman1.png", "assets/images/hangman2.png", "assets/images/hangman3.png", "assets/images/hangman4.png", "assets/images/hangman5.png", "assets/images/hangman6.png", "assets/images/hangman7.png", "assets/images/hangman8.png", "assets/images/hangman9.png", "assets/images/hangman10.png"]
-	var gallowsImage;
-	// var gallowsImage = document.getElementById("gallows").src = gallowsArray
 
 	for (var i = 0; i < numBlanks; i++) {
 		if (selectedWord[i] == letter) {
@@ -57,7 +55,7 @@ function checkLetters(letter) {
 		}
 	}
 
-	//Check where in word letter exists, then populate blanksAndSuccesses array
+	//Check where in word letter exists, then populate blanksAndSuccesses array and change gallows image
 	if (isLetterInWord) {
 		for (var i = 0; i < numBlanks; i++) {
 			if (selectedWord[i] == letter) {
@@ -67,35 +65,12 @@ function checkLetters(letter) {
 	} else {
 		wrongLetters.push(letter);
 		guessesLeft--
-		for (var i = 0; i < gallowsArray.length; ++i) {
-			gallowsImage = document.getElementById("gallows").src = gallowsArray[i];
-		}
-
+		document.getElementById("gallows").src = gallowsArray[10 - guessesLeft];
 	}
 
 	//Testing
 	console.log(blanksAndSuccesses);
 }
-
-//------------------------------------------------------------------------------------
-
-// function drawHangman () {
-// 	if (guessesLeft == 9) {
-// 		document.getElementById("gallows").src = "assets/images/hangman1.png"
-
-// 		document.onkeyup = function(e) {
-//     var image = document.getElementById('x');
-
-//     //Left Key
-//     if (event.keyCode == 37) {
-//         previous();
-//         //Right Key
-//     } else if (event.keyCode == 39) {
-//         next();
-//     }
-// }
-// 	}
-// }
 
 //------------------------------------------------------------------------------------
 
