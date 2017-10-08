@@ -1,0 +1,10 @@
+body {
+  background-color: rgba(255,255,255,0.8) !important;
+  background-image: url(https://theunpaidgamers.files.wordpress.com/2012/03/reckoning_dlc1_gallows1.jpg);
+  background-blend-mode: color;
+  font-family: 'Metal Mania';
+}
+
+#hidden-letters {
+	padding-top: 100px;
+}

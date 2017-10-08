@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+</head>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+<body>
+	<div class="container">
+		<div class="jumbotron text-center"><h1>Hangman Game</h1></div>
+		<div class="row">
+			<div class="col-md-6 text-center"><h3>Here be the gallows</h3><br><br><img src="assets/images/hangman0.png" class="img-responsive img-thumbnail block-center" id="gallows"></div>
+			<div class="col-md-6 text-center">
+				<div>
+					<h1 id="hidden-letters">_ _ _ _ _ _</h1>
+				</div>
+				<br><br>
+				<div>
+					<h3>Incorrect Letters</h3>
+				</div>
+				<br><br>
+				<div>
+					<h4 id="incorrect-letters">  </h4>
+				</div>
+				<br><br>
+				<div>
+					<h3>Chances Left</h3>
+				</div>
+				<br><br>
+				<div>
+					<h1 id="guesses-left">10</h1>
+				</div>
+				<br><br>
+				<div>
+					<h3>Total Wins</h3>
+				</div>
+				<div>
+					<h1 id="win-count">0</h1>
+				</div>
+
+			</div>
+
+</body>
+
+<script src="assets/javascript/game.js"></script>
+
+</html>
