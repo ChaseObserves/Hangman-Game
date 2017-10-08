@@ -9,6 +9,7 @@ body {
 	padding-top: 100px;
 }
 
-.jumbotron {
+.clear-background {
 	background-color: rgba(0,0,0,0);
+	border-style: none;
 }

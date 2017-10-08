@@ -86,12 +86,18 @@ function roundComplete () {
 
 	if (lettersInWord.toString() == blanksAndSuccesses.toString()) {
 		winCount++;
-		alert("You Won!");
-		document.getElementById("win-count").innerHTML = winCount;
-		startGame();
+		//I set a timeout here of 0.1 seconds because I wanted the finished word to display on screen
+		// with a win, and the completed hangman image to display with a loss
+		setTimeout(function () {
+			alert("You Won!");
+			document.getElementById("win-count").innerHTML = winCount;
+			startGame();
+		}, 100);
 	} else if (guessesLeft == 0){
-		alert("You Lost")
-		startGame();
+		setTimeout(function () {
+			alert("You Lost")
+			startGame();
+		}, 100);
 	}
 }
 
